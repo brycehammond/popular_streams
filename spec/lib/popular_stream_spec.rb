@@ -80,6 +80,13 @@ RSpec.describe PopularStream do
     end
   end
 
+  it '#remove removes a field' do
+    stream.vote(field: '1')
+    stream.vote(field: '2')
+    stream.remove(field: '2')
+    expect(stream.count).to eq(1)
+  end
+
   it "#count gets the number of elements and #clear! removes them all" do
     stream.vote(field: '1')
     stream.vote(field: '1')

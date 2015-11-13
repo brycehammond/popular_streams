@@ -37,6 +37,10 @@ class PopularStream
     redis.zrevrange(name, offset, offset + limit - 1, options)
   end
 
+  def remove(field:)
+    redis.zrem(name, field)
+  end
+
   def clear!
     redis.del(name)
   end
