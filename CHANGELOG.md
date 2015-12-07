@@ -1,3 +1,7 @@
+# Version 1.2 (Dec. 7, 2015)
+
+* Adding ability to remove items from the stream
+
 # Version 1.1 (Nov. 30, 2014)
 
 * Adding ability to get the scores with the results. This will be the default
